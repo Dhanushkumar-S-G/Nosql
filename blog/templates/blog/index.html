@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KnowInMy- Dashboard</title>
+    <title>Blog - Dhanush</title>
 
     <!-- Custom fonts for this template-->
     <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -40,7 +40,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">KnowInMy</div>
+                <div class="sidebar-brand-text mx-3">Blog</div>
             </a>
 
             <!-- Divider -->
@@ -48,7 +48,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{% url 'write-blog' %}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Create Blog</span>
                 </a>
@@ -57,7 +57,7 @@
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{% url 'view-blog' %}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Update Blog</span>
                 </a>
@@ -65,7 +65,7 @@
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{% url 'delete-blogs' %}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Delete Blog</span>
                 </a>

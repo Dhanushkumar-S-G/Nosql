@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #packages apps
+    'crispy_forms',
+
+    #created apps
     'blog',
 ]
 
@@ -77,8 +82,8 @@ WSGI_APPLICATION = 'mongodb_blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.djongo',
+        'NAME':'blogs',
     }
 }
 
